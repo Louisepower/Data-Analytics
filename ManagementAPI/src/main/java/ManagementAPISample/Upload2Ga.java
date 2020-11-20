@@ -34,8 +34,7 @@ public class Upload2Ga {
 
     private static final String APPLICATION_NAME = "Hello Analytics";
     private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
-//  private static final String KEY_FILE_LOCATION = "/home/cupshe/jsonkey/truemetrics-222507-2bed10a82266.json";
-    private static final String KEY_FILE_LOCATION = "/Users/louise/cupshe/truemetrics-222507-2bed10a82266.json";
+    private static final String KEY_FILE_LOCATION = "/Users/louise/cupshe/key.json";
     public static void main(String[] args) {
         /** 日志 **/
         Log logger = LogFactory.getLog(Upload2Ga.class);
@@ -50,28 +49,21 @@ public class Upload2Ga {
         String remotePath = "/home/cupshe/data";
 
         /** 配置文件路径 **/
-        String TodayFilePath = "/home/cupshe/data/ga_import_product_" + sdf.format(d) + ".csv";
-//      String localPath = "/home/cupshe/importdata/ga_import_product_" + sdf.format(d) + ".csv";
-        String localPath = "/Users/louise/cupshe/importdata/ga_import_product_" + sdf.format(d) + ".csv";
+        String TodayFilePath = "/home/data/ga_import_product_" + sdf.format(d) + ".csv";
+        String localPath = "/Users/louise/importdata/ga_import_product_" + sdf.format(d) + ".csv";
 
         /** 获取GA待上传文件 **/
         File file = new File(localPath);
 
-        /** 配置cupshe GA账户信息 **/
-//        String AccountId = "60224307" ;
-//        String WebPropertyId = "UA-60224307-1" ;
-//        String CustomDataSourceId = "0d91XyLyTya9kw56M-Hw7A" ;
 
-
-        /** 触脉测试 GA账户信息 **/
-           String AccountId = "28338210";
-           String WebPropertyId = "UA-28338210-5";
-           String CustomDataSourceId = "KfCciZXLQV6v2X5C3ZWoTQ";
+        /**  GA账户信息 **/
+           String AccountId = "*******";
+           String WebPropertyId = "UA-*******-*";
+           String CustomDataSourceId = "*****************";
 
 
         /** 定义程序执行成功验证文件xxxx_xx_xx_UploadFinish.label 存储路径 */
-//         String resultfilepath = "/home/cupshe/importdata/output" ;
-        String resultfilepath = "/Users/louise/cupshe/importdata/output" ; //请修改为存放完成标志文件XXXXX_finish.label的路径
+        String resultfilepath = "/Users/louise/importdata/output" ; //请修改为存放完成标志文件XXXXX_finish.label的路径
 
         /**当前日期验证文件名称*/
         String fileName = sdf.format(d) +"_UploadFinish.label";
