@@ -1,4 +1,4 @@
-# Data-Analytics
+# Data-Analytics - BigQuery API
  Extracting BigQuery Result to  Google Cloud Storage Files
 
 This is a Java project and it has completed the following three tasks:  
@@ -10,3 +10,14 @@ This is a Java project and it has completed the following three tasks:
 
 
 You can automate the export of BQ data to GCS  through this project.
+
+# Data-Analytics - GA Management API
+Upload data from sftp to  Google Analytics
+
+This is a Java project and it has completed the following three tasks:  
+
+1. Download the data from SFTP .
+  
+2. Upload the csv file to GA  by GA management API
+
+You can automate the upload data to GA  through this project.
