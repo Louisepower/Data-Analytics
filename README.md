@@ -14,7 +14,7 @@ You can automate the export of BQ data to GCS  through this project.
 # Data-Analytics - GA Management API
 Upload data from sftp to  Google Analytics
 
-This is a Java project and it has completed the following three tasks:  
+This is a Java project and it has completed the following two tasks:  
 
 1. Download the data from SFTP .
   
