@@ -65,7 +65,7 @@
       <dependency>
           <groupId>com.google.guava</groupId>
           <artifactId>guava</artifactId>
-          <version>23.5-jre</version>
+          <version>29.0-jre</version>
       </dependency>
       <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin &ndash;&gt;-->
       <!--<dependency>-->
